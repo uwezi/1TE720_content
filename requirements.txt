@@ -1,3 +1,5 @@
-numpy==1.14.5
+numpy
 scipy
 matplotlib
+ipywidgets
+jupyter_contrib_nbextensions
