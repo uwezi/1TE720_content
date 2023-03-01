@@ -65,6 +65,6 @@ void loop()
   } while ((timeStep < 100000) && (value > 0)); 
   
   Serial.println("#***************************************");
-  Serial.println("# Ready.  ny mätning om 5 sekunder");
-  delay(5000);  // vänta i 5 sekunder
+  Serial.println("# Ready.  ny mätning om 10 sekunder");
+  delay(10000);  // vänta i 10 sekunder
 }

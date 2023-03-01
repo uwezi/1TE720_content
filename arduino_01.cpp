@@ -1,4 +1,6 @@
-#define LED_PIN 12  // Pin D12 kommer styra en lysdiod
+#include <Arduino.h>  // bara för PlatformIO!
+
+#define LED_PIN 12    // Pin D12 kommer styra en lysdiod
 
 //-----------------------------------------------------------
 // initialisering
@@ -8,8 +10,6 @@ void setup()
   Serial.begin(115200);        // dataöverföring till datorn
   
   pinMode(LED_PIN, OUTPUT);    // definierar LED_PIN som utgång
-  
-  digitalWrite(LED_PIN, LOW);  // sätter LED_PIN till 0 V
 }
 
 //-----------------------------------------------------------

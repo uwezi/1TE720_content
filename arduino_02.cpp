@@ -1,3 +1,5 @@
+#include <Arduino.h>  // bara för PlatformIO
+
 #define LED_PIN    12 // Pin D12 är en indikator
 #define CHARGE_PIN  2 // Pin D2 kommer vara en spänningsskälla
 #define VOLTMETER   7 // PIN A7 ska vara vår mätingång
@@ -65,6 +67,6 @@ void loop()
   } while ((timeStep < 100000) && (value > 0)); 
   
   Serial.println("#***************************************");
-  Serial.println("# Ready.  ny mätning om 5 sekunder");
-  delay(5000);  // vänta i 5 sekunder
+  Serial.println("# Ready.  ny mätning om 10 sekunder");
+  delay(10000);  // vänta i 10 sekunder
 }
