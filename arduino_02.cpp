@@ -39,9 +39,9 @@ void loop()
   
   digitalWrite(CHARGE_PIN, HIGH); // välj 5V (=HIGH)
 
-  while (voltage(VOLTMETER) < 5.0)
+  while (voltage(VOLTMETER) < 4.8)
   {
-    // vänta tills kondensatorn är laddad till +5 V
+    // vänta tills kondensatorn är laddad till +4.8 V
   }
   
   delay(100);                  // vänta 100 ms extra
